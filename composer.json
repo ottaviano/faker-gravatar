@@ -1,0 +1,31 @@
+{
+    "name": "ottaviano/faker-gravatar",
+    "license": "MIT",
+    "description": "Faker Gravatar image provider",
+    "type": "library",
+    "keywords": ["faker", "fixtures", "data", "gravatar", "image", "avatar"],
+    "authors": [
+        {
+            "name": "Dimitri Gritsajuk",
+            "email": "gritsajuk.dimitri@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "^1.6",
+        "phpunit/phpunit": "^7.5",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ottaviano\\Faker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\Ottaviano\\Faker\\": "tests/"
+        }
+    }
+}
