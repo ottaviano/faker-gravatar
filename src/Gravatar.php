@@ -16,7 +16,7 @@ class Gravatar extends Base
         'wavatar',
     ];
 
-    private const URL = 'https://www.gravatar.com/avatar/%s.jpg?d=%s&size=%d';
+    private const URL = 'https://www.gravatar.com/avatar/%s?d=%s&size=%d';
 
     public static function gravatarUrl(string $mode = null, string $email = null, int $size = 80): string
     {

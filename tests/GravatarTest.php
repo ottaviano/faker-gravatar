@@ -9,17 +9,17 @@ class GravatarTest extends TestCase
 {
     public function testDefaultUrlValues()
     {
-        $this->assertRegExp('#^https://www\.gravatar\.com/avatar/\d+\.jpg\?d=retro&size=80#', Gravatar::gravatarUrl());
+        $this->assertRegExp('#^https://www\.gravatar\.com/avatar/\d+\?d=retro&size=80#', Gravatar::gravatarUrl());
     }
 
     public function testGravatarUrlAcceptsCustomMode()
     {
-        $this->assertRegExp('#^https://www\.gravatar\.com/avatar/\d+\.jpg\?d=mp&size=80#', Gravatar::gravatarUrl('mp'));
+        $this->assertRegExp('#^https://www\.gravatar\.com/avatar/\d+\?d=mp&size=80#', Gravatar::gravatarUrl('mp'));
     }
 
     public function testGravatarUrlAcceptsCustomSize()
     {
-        $this->assertRegExp('#^https://www\.gravatar\.com/avatar/\d+\.jpg\?d=retro&size=200#', Gravatar::gravatarUrl(null, null, 200));
+        $this->assertRegExp('#^https://www\.gravatar\.com/avatar/\d+\?d=retro&size=200#', Gravatar::gravatarUrl(null, null, 200));
     }
 
     public function testGravatarUrlAcceptsCustomEmail()
@@ -27,7 +27,7 @@ class GravatarTest extends TestCase
         $email = 'TeSt@EmAiL.OK';
         $hash = md5(strtolower($email));
 
-        $this->assertRegExp("#^https://www\.gravatar\.com/avatar/${hash}\.jpg\?d=retro&size=80#", Gravatar::gravatarUrl(null, $email));
+        $this->assertRegExp("#^https://www\.gravatar\.com/avatar/${hash}\?d=retro&size=80#", Gravatar::gravatarUrl(null, $email));
     }
 
     public function testDownloadWithDefaults()
