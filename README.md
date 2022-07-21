@@ -1,6 +1,6 @@
 # Gravatar image provider for Faker
 
-[![Build Status](https://travis-ci.org/ottaviano/faker-gravatar.svg?branch=master)](https://travis-ci.org/ottaviano/faker-gravatar)
+[![Tests](https://github.com/ottaviano/faker-gravatar/actions/workflows/tests.yaml/badge.svg?branch=master)](https://github.com/ottaviano/faker-gravatar/actions/workflows/tests.yaml)
 
 It is [Gravatar](https://en.gravatar.com/site/implement/images/) image provider for [fzaninotto/Faker](https://github.com/fzaninotto/Faker)
 

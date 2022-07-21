@@ -14,7 +14,7 @@
         "php": "^7.1|^8.0"
     },
     "require-dev": {
-        "fzaninotto/faker": "^1.9",
+        "fzaninotto/faker": "^1.5",
         "phpunit/phpunit": "^9.5",
         "ext-curl": "*"
     },
