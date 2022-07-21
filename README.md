@@ -3,7 +3,7 @@
 [![Tests](https://github.com/ottaviano/faker-gravatar/actions/workflows/tests.yaml/badge.svg?branch=master)](https://github.com/ottaviano/faker-gravatar/actions/workflows/tests.yaml)
 [![Latest Version](https://img.shields.io/github/release/ottaviano/faker-gravatar.svg?style=flat-square)](https://github.com/ottaviano/faker-gravatar/releases)
 
-It is [Gravatar](https://en.gravatar.com/site/implement/images/) image provider for [fzaninotto/Faker](https://github.com/fzaninotto/Faker)
+It is [Gravatar](https://en.gravatar.com/site/implement/images/) image provider for ~~[fzaninotto/Faker](https://github.com/fzaninotto/Faker)~~ [fakerphp/faker](https://github.com/fakerphp/faker)
 
 Here are some examples of generated avatars:
 
