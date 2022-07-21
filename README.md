@@ -22,7 +22,7 @@ Here are some examples of generated avatars:
 
 ## Requirements
  
- - PHP >= 7.1
+ - PHP >= 7.1|8.0
 
 ## Installation
 
