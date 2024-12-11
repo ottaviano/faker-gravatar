@@ -18,7 +18,7 @@ class Gravatar extends Base
 
     private const URL = 'https://www.gravatar.com/avatar/%s?d=%s&size=%d';
 
-    public static function gravatarUrl(string $mode = null, string $email = null, int $size = 80): string
+    public static function gravatarUrl(?string $mode = null, ?string $email = null, int $size = 80): string
     {
         if (!$mode || !in_array($mode, static::MODES, true)) {
             $mode = 'retro';
@@ -29,7 +29,7 @@ class Gravatar extends Base
         return sprintf(static::URL, $hash, $mode, $size);
     }
 
-    public static function gravatar(string $dir = null, string $mode = null, string $email = null, int $size = 80, bool $fullPath = true): ?string
+    public static function gravatar(?string $dir = null, ?string $mode = null, ?string $email = null, int $size = 80, bool $fullPath = true): ?string
     {
         $dir = $dir ?? sys_get_temp_dir();
 
